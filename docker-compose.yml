@@ -1,0 +1,62 @@
+version: '3'
+
+services:
+
+    web:
+        build: .
+        ports:
+            - "3000:3000"
+            - "4000:4000"
+        # command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+        # depends_on:
+        #     - webpackdevserver
+        # links:
+        #     - webpackdevserver
+        volumes:
+            - .:/usr/src/app
+            - gem_cache:/gems
+        env_file:
+            - .env/development/web
+            - .env/development/database
+        environment:
+            - WEBPACKER_DEV_SERVER_HOST:webpackdevserver
+
+    webpackdevserver:
+        build: .
+        command: ./bin/webpack-dev-server
+        # command: ["/bin/bash", "-c", "./bin/webpack-dev-server"]
+        # command: ./bin/webpack-dev-server --mode development --open --hot --host 0.0.0.0
+        ports:
+            - "3035:3035"
+        volumes:
+            - .:/usr/src/app
+            - gem_cache:/gems
+        env_file:
+            - .env/development/web
+            - .env/development/database
+        environment: 
+            - WEBPACKER_DEV_SERVER_HOST:0.0.0.0
+            # - WEBPACKER_DEV_SERVER_PUBLIC=0.0.0.0:3035
+        # depends_on:
+        #     - web
+    redis:
+        image: redis
+
+    database:
+        image: postgres
+        env_file:
+            - .env/development/database
+        volumes:
+            - db_data:/var/lib/postgresql/data
+
+    selenium_chrome:
+        image: selenium/standalone-chrome-debug
+        logging:
+            driver: none
+        ports:
+            - "5900:5900"
+
+volumes:
+    db_data: {}
+    gem_cache: {}
+        

@@ -5,13 +5,17 @@ Order of start a new docker ROR:
     3. cd /usr/src/app
     4. gem install rails
     5. rails new myapp --skip-test --skip-bundle
+    6. exit current docker container
         1. sudo chmod 666 myapp2/
-    6. put below files into your application folder
+    6. put below files into your application folder by execute this [cp -r .env .gitignore docker-compose.yml docker-entrypoint.sh Dockerfile ../testDocker1/]
         1. .env/ (folder)
         1. .gitignore
         2. Dockerfile
         3. docker-compose.yml
         4. docker-entrypoint.sh
+    7. sudo chmod 666 myapp2/
+        1. because you move some files and folder in to your application
+    8. Get into your application folder and execute [docker-compose build]
     7. docker-compose run web bin/rails webpacker:install
     8. docker-compose run web bin/rails webpacker:install:react
 

@@ -34,10 +34,18 @@ Order of starting a new docker on Chinese Server with ROR:
     4. then get into dockerizeRORPrerequisitePlusOrders folder
     5. put below files into your application folder by execute this [cp -r .env .gitignore docker-compose.yml docker-entrypoint.sh Dockerfile ../testDocker1/]
         1. .env/ (folder)
-        1. .gitignore
-        2. Dockerfile
-        3. docker-compose.yml
-        4. docker-entrypoint.sh
+        2. .gitignore
+        3. Dockerfile
+        4. docker-compose.yml
+        5. docker-entrypoint.sh
     6. sudo chmod 666 myapp2/
     7. Get into your application folder and execute [docker-compose build]
         1. make sure there is only one DockerizeROR running, because port is not dynamic
+    8. docker-compose run web yarn install
+    9. docker-compose run web bundle install
+        1. have no idea why I have to run bundle install here.....
+    9. docker-compose run web bin/rails webpacker:install
+        1. please make sure whether you are going to click y to overwrite some webpacker files
+    10. docker-compose run web bin/rails webpacker:install:react
+    11. docker-compose up -d 
+    12. now you can access ip:3000 to check whether it is okay

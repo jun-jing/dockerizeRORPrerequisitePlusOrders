@@ -26,7 +26,7 @@ WORKDIR /usr/src/app
 ENV BUNDLE_PATH /gems
 
 # comment for aws, when local remember uncomment
-# RUN bundle config 'mirror.https://rubygems.org' 'http://mirrors.aliyun.com/rubygems/'
+RUN bundle config 'mirror.https://rubygems.org' 'http://mirrors.aliyun.com/rubygems/'
 # RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 
 RUN bundle install 

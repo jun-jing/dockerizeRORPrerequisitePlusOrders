@@ -7,20 +7,23 @@ Order of starting a new docker on Chinese Server with ROR:
     5. rails new myapp --skip-test --skip-bundle
     6. exit current docker container
         1. sudo chmod 666 myapp2/
-    7. put below files into your application folder by execute this [cp -r .env .gitignore docker-compose.yml docker-entrypoint.sh Dockerfile ../testDocker1/]
+    7. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
+    8. then get into dockerizeRORPrerequisitePlusOrders folder
+    9. put below files into your application folder by execute this [cp -r .env .gitignore docker-compose.yml docker-entrypoint.sh Dockerfile ../testDocker1/]
         1. .env/ (folder)
         2. .gitignore
         3. Dockerfile
         4. docker-compose.yml
         5. docker-entrypoint.sh
-    8. sudo chmod 666 myapp2/
+    10. sudo chmod 666 myapp2/
         1. because you move some files and folder in to your application
-    9. Get into your application folder and execute [docker-compose build]
+    11. Get into your application folder and execute [docker-compose build]
         1. make sure there is only one DockerizeROR running, because port is not dynamic
-    10. docker-compose run web yarn install
-    11. docker-compose run web bin/rails webpacker:install
-    12. docker-compose run web bin/rails webpacker:install:react
-    13. docker-compose up -d 
+    12. docker-compose run web yarn install
+    13. docker-compose run web bin/rails webpacker:install
+    14. docker-compose run web bin/rails webpacker:install:react
+    15. docker-compose up -d 
+    16. now you can access ip:3000 to check whether it is okay
 
 
 2. Using an existence ROR

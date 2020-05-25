@@ -1,19 +1,18 @@
 Order of starting a new docker on Chinese Server with ROR:
 1. Create a new ROR
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
-    2. then get into dockerizeRORPrerequisitePlusOrders folder
-    3. execute command1.sh
-    4. cd /usr/src/app/dockerizeRORPrerequisitePlusOrders
-    5. execute command2.sh and exit temp container
-    6. execute command3.sh(move below files/folder to specific path)
+    2. execute dockerizeRORPrerequisitePlusOrders/command1.sh
+    3. cd /usr/src/app/
+    4. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
+    5. execute dockerizeRORPrerequisitePlusOrders/command3.sh(move below files/folder to specific path)
         1. .env/ (folder)
         2. .gitignore
         3. Dockerfile
         4. docker-compose.yml
         5. docker-entrypoint.sh
-    7. execute command4.sh
+    6. execute dockerizeRORPrerequisitePlusOrders/command4.sh
         1. make sure there is only one DockerizeROR running, because port is not dynamic
-    8. now you can access ip:3000 to check whether it is okay
+    7. now you can access ip:3000 to check whether it is okay
 
 
 2. Using an existence ROR

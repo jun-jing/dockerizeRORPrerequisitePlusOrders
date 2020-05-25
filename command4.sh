@@ -1,6 +1,5 @@
-cd ../randomName/
-docker-compose build
-docker-compose run web yarn install
-docker-compose run web bin/rails webpacker:install
-docker-compose run web bin/rails webpacker:install:react
-docker-compose up -d
+(cd randomName/ && docker-compose build)
+(cd randomName/ && docker-compose run web yarn install)
+(cd randomName/ && docker-compose run web bin/rails webpacker:install)
+(cd randomName/ && docker-compose run web bin/rails webpacker:install:react)
+(cd randomName/ && docker-compose up -d)

@@ -2,7 +2,6 @@ Order of starting a new docker on Chinese Server with ROR:
 1. Create a new ROR
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
     2. then get into dockerizeRORPrerequisitePlusOrders folder
-    locate at the root folder, where you are going to create an app here
     3. execute command1.sh
     4. cd /usr/src/app/dockerizeRORPrerequisitePlusOrders
     5. execute command2.sh and exit temp container

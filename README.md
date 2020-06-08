@@ -1,7 +1,7 @@
 Order of starting a new docker on Chinese Server with ROR:
 1. Create a new ROR(better do it on your local dev env, not on server side)
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
-    2. create a repo on git, and replace the "randomName" with repo's "name" of all command.sh files.
+    2. create a repo on git, and replace the "rubyFourKingWebsite" with repo's "name" of all command.sh files.
     3. execute dockerizeRORPrerequisitePlusOrders/command1.sh
     4. cd /usr/src/app/
     5. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
@@ -15,7 +15,7 @@ Order of starting a new docker on Chinese Server with ROR:
         1. make sure there is only one DockerizeROR running, because port is not dynamic
     8. now you can access ip:3000 to check whether it is okay
     9. git push to repo
-    10. go to dockerizeRORPrerequisitePlusOrders/ folder and checkout . operation, make sure randomName is back.
+    10. go to dockerizeRORPrerequisitePlusOrders/ folder and checkout . operation, make sure rubyFourKingWebsite is back.
 
 
 2. Using an existence ROR

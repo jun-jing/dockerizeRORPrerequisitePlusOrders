@@ -1,2 +1,2 @@
 gem install rails 
-rails new randomName --skip-test --skip-bundle
+rails new rubyFourKingWebsite --skip-test --skip-bundle

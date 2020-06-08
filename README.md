@@ -16,6 +16,9 @@ Order of starting a new docker on Chinese Server with ROR:
         1. make sure there is only one DockerizeROR running, because port is not dynamic
     9. now you can access ip:3000 to check whether it is okay
     10. git push new create app to repo, and you can clone it to everywhere.
+        1. maybe you need to run below commands:
+            1. docker-compose run web yarn install
+            2. docker-compose exec web yarn install --check-files
 
 > PS额外信息:
 >> 本地的bundle install很慢

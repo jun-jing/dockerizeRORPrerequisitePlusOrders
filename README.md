@@ -1,19 +1,21 @@
 Order of starting a new docker on Chinese Server with ROR:
-1. Create a new ROR
+1. Create a new ROR(better do it on your local dev env, not on server side)
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
-    2. execute dockerizeRORPrerequisitePlusOrders/command1.sh
-    3. cd /usr/src/app/
-    4. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
-    5. execute dockerizeRORPrerequisitePlusOrders/command3.sh(move below files/folder to specific path)
+    2. create a repo on git, and replace the "randomName" with repo's "name" of all command.sh files.
+    3. execute dockerizeRORPrerequisitePlusOrders/command1.sh
+    4. cd /usr/src/app/
+    5. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
+    6. execute dockerizeRORPrerequisitePlusOrders/command3.sh(move below files/folder to specific path)
         1. .env/ (folder)
         2. .gitignore
         3. Dockerfile
         4. docker-compose.yml
         5. docker-entrypoint.sh
-    6. execute dockerizeRORPrerequisitePlusOrders/command4.sh
+    7. execute dockerizeRORPrerequisitePlusOrders/command4.sh
         1. make sure there is only one DockerizeROR running, because port is not dynamic
-    7. now you can access ip:3000 to check whether it is okay
-    8. And now you can change your randomName to any other name, and git push to repo. *** about change name here, I need to give it a try, if it really okay, then I can confirm here......
+    8. now you can access ip:3000 to check whether it is okay
+    9. git push to repo
+    10. go to dockerizeRORPrerequisitePlusOrders/ folder and checkout . operation, make sure randomName is back.
 
 
 2. Using an existence ROR

@@ -1,21 +1,24 @@
 Order of starting a new docker on Chinese Server with ROR:
-1. Create a new ROR(better do it on your local dev env, not on server side)
-    1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git
-    2. create a repo on git, and replace the "rubyFourKingWebsite" with repo's "name" of all command.sh files.
-    3. execute dockerizeRORPrerequisitePlusOrders/command1.sh
-    4. cd /usr/src/app/
-    5. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
-    6. execute dockerizeRORPrerequisitePlusOrders/command3.sh(move below files/folder to specific path)
+1. Create a new ROR(replace name in local, exec commadn on server)
+    1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git to local.
+    2. create a repo on git, and replace the "rubyFourKingWebsite" with repo's "name" of all command.sh files in local and push it to git.
+    3. go to server side's dockerizeRORPrerequisitePlusOrders/ folder and exec pull, then back to .. directory.
+    4. execute dockerizeRORPrerequisitePlusOrders/command1.sh
+    5. cd /usr/src/app/
+    6. execute dockerizeRORPrerequisitePlusOrders/command2.sh and exit temp container
+    7. execute dockerizeRORPrerequisitePlusOrders/command3.sh(move below files/folder to specific path)
         1. .env/ (folder)
         2. .gitignore
         3. Dockerfile
         4. docker-compose.yml
         5. docker-entrypoint.sh
-    7. execute dockerizeRORPrerequisitePlusOrders/command4.sh
+    8. execute dockerizeRORPrerequisitePlusOrders/command4.sh
         1. make sure there is only one DockerizeROR running, because port is not dynamic
-    8. now you can access ip:3000 to check whether it is okay
-    9. git push to repo
-    10. go to dockerizeRORPrerequisitePlusOrders/ folder and checkout . operation, make sure rubyFourKingWebsite is back.
+    9. now you can access ip:3000 to check whether it is okay
+    10. git push new create app to repo, and you can clone it to everywhere.
+
+> PS额外信息:
+>> 本地的bundle install很慢
 
 
 2. Using an existence ROR

@@ -13,6 +13,7 @@ Order of starting a new docker on Chinese Server with ROR:
     6. execute dockerizeRORPrerequisitePlusOrders/command4.sh
         1. make sure there is only one DockerizeROR running, because port is not dynamic
     7. now you can access ip:3000 to check whether it is okay
+    8. And now you can change your randomName to any other name, and git push to repo. *** about change name here, I need to give it a try, if it really okay, then I can confirm here......
 
 
 2. Using an existence ROR

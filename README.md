@@ -23,9 +23,9 @@ Order of starting a new docker on Chinese Server with ROR:
             4. git push -u origin master
             5. git push
         2. when you clone it to your local maybe you need to run below commands:
-            1. docker-compose run web yarn install
-            2. docker-compose run web yarn install --check-files
-            3. docker-compose run web bin/rails webpacker:install
+            1. docker-compose run web yarn install  && \
+            docker-compose run web yarn install --check-files && \
+            docker-compose run web bin/rails webpacker:install
 
 > PS额外信息:
 >> 本地的bundle install很慢

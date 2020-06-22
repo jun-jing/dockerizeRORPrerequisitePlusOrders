@@ -1,7 +1,7 @@
-chmod -R 777 rubyFourKingWebsite
-echo "check rubyFourKingWebsite is 777."
-(cd rubyFourKingWebsite && docker-compose build)
-(cd rubyFourKingWebsite && docker-compose run web yarn install)
-(cd rubyFourKingWebsite && docker-compose run web bin/rails webpacker:install)
-(cd rubyFourKingWebsite && docker-compose run web bin/rails webpacker:install:react)
-(cd rubyFourKingWebsite && docker-compose up -d)
+chmod -R 777 vintageMarket
+echo "check vintageMarket is 777."
+(cd vintageMarket && docker-compose build)
+(cd vintageMarket && docker-compose run web yarn install)
+(cd vintageMarket && docker-compose run web bin/rails webpacker:install)
+(cd vintageMarket && docker-compose run web bin/rails webpacker:install:react)
+(cd vintageMarket && docker-compose up -d)

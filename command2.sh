@@ -1,2 +1,2 @@
 gem install rails 
-rails new rubyFourKingWebsite --skip-test --skip-bundle
+rails new vintageMarket --skip-test --skip-bundle

@@ -20,7 +20,8 @@ Order of starting a new docker on Chinese Server with ROR:
             1. git remote add origin https://github.com/berxtjkl/vintageMarket.git
             2. git add .
             3. git commit -m "first time upload."
-            4. git push
+            4. git push -u origin master
+            5. git push
         2. when you clone it to your local maybe you need to run below commands:
             1. docker-compose run web yarn install
             2. docker-compose run web yarn install --check-files

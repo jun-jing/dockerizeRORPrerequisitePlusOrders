@@ -17,11 +17,11 @@ Order of starting a new docker on Chinese Server with ROR:
     9. now you can access ip:3000 to check whether it is okay
     10. git push new create app to repo, and you can clone it to everywhere.
         1. about the order of first time push to git
-            1. git remote add origin https://github.com/berxtjkl/vintageMarket.git
-            2. git add .
-            3. git commit -m "first time upload."
-            4. git push -u origin master
-            5. git push
+            1. git remote add origin https://github.com/berxtjkl/vintageMarket.git && \
+            git add . && \
+            git commit -m "first time upload." && \
+            git push -u origin master && \
+            git push
         2. when you clone it to your local maybe you need to run below commands:
             1. docker-compose run web yarn install  && \
             docker-compose run web yarn install --check-files && \

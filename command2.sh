@@ -1,2 +1,2 @@
 gem install rails 
-rails new vintageMarket --skip-test --skip-bundle
+rails new hmyse --skip-test --skip-bundle

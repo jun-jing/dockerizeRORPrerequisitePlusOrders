@@ -12,9 +12,9 @@ Order of starting a new docker on Chinese Server with ROR:
         3. Dockerfile
         4. docker-compose.yml
         5. docker-entrypoint.sh
-    8. execute dockerizeRORPrerequisitePlusOrders/command4.sh
+    8. !!execute dockerizeRORPrerequisitePlusOrders/command4.sh(remember to set all relative ports increment+1 in docker-compose.yml depends on your server side that how many docker is running)
         1. make sure there is only one DockerizeROR running, because port is not dynamic
-    9. now you can access ip:3000 to check whether it is okay
+    9. now you can access ip:30xx to check whether it is okay
     10. git push new create app to repo, and you can clone it to everywhere.
         1. about the order of first time push to git
             1. git remote add origin https://github.com/berxtjkl/hmyse.git && \

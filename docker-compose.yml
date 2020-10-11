@@ -5,9 +5,9 @@ services:
     web:
         build: .
         ports:
-            - "3000:3000"
-            - "4000:4000"
-        # command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+            - "3002:3000"
+            - "4002:4000"
+        # command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3002 -b '0.0.0.0'"
         # depends_on:
         #     - webpackdevserver
         # links:
@@ -27,7 +27,7 @@ services:
         # command: ["/bin/bash", "-c", "./bin/webpack-dev-server"]
         # command: ./bin/webpack-dev-server --mode development --open --hot --host 0.0.0.0
         ports:
-            - "3035:3035"
+            - "3037:3035"
         volumes:
             - .:/usr/src/app
             - gem_cache:/gems
@@ -54,7 +54,7 @@ services:
         logging:
             driver: none
         ports:
-            - "5900:5900"
+            - "5902:5900"
 
 volumes:
     db_data: {}

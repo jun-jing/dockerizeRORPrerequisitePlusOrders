@@ -1,5 +1,5 @@
 Order of starting a new docker on Chinese Server with ROR:
-1. Create a new ROR(replace name in local, exec commadn on server)
+1. Create a new ROR(replace name in local, exec command on server)
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git to local.
     2. create a repo on git, and replace the "hmyse" with repo's "name" of all command.sh files in local and push it to git.
     3. go to server side's dockerizeRORPrerequisitePlusOrders/ folder and exec pull, then back to .. directory.

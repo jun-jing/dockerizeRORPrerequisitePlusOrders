@@ -1,7 +1,7 @@
 Order of starting a new docker on Chinese Server with ROR:
 1. Create a new ROR(replace name in local, exec command on server)
     1. git clone https://github.com/berxtjkl/dockerizeRORPrerequisitePlusOrders.git to local.
-    2. create a repo on git, and replace the "hmyse" with repo's "name" of all command.sh files in local and push it to git.
+    2. create a repo on git, and replace the "RORTestTeam" with repo's "name" of all command.sh files in local and remember to increment port with 1 and then push it to git.
     3. go to server side's dockerizeRORPrerequisitePlusOrders/ folder and exec pull, then back to .. directory.
     4. execute dockerizeRORPrerequisitePlusOrders/command1.sh
     5. cd /usr/src/app/
@@ -18,7 +18,7 @@ Order of starting a new docker on Chinese Server with ROR:
     9. now you can access ip:30xx to check whether it is okay
     10. git push new create app to repo, and you can clone it to everywhere.
         1. about the order of first time push to git
-            1. git remote add origin https://github.com/berxtjkl/hmyse.git && \
+            1. git remote add origin https://github.com/berxtjkl/RORTestTeam.git && \
             git add . && \
             git commit -m "first time upload." && \
             git push -u origin master && \

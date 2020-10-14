@@ -1,7 +1,7 @@
-chmod -R 777 hmyse
-echo "check hmyse is 777."
-(cd hmyse && docker-compose build)
-(cd hmyse && docker-compose run web yarn install)
-(cd hmyse && docker-compose run web bin/rails webpacker:install)
-(cd hmyse && docker-compose run web bin/rails webpacker:install:react)
-(cd hmyse && docker-compose up -d)
+chmod -R 777 RORTestTeam
+echo "check RORTestTeam is 777."
+(cd RORTestTeam && docker-compose build)
+(cd RORTestTeam && docker-compose run web yarn install)
+(cd RORTestTeam && docker-compose run web bin/rails webpacker:install)
+(cd RORTestTeam && docker-compose run web bin/rails webpacker:install:react)
+(cd RORTestTeam && docker-compose up -d)

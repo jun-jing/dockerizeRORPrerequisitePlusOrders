@@ -17,10 +17,10 @@ Order of starting a new docker on Chinese Server with ROR:
         2. when run command4.sh sometimes the chinese mirror would fail nokogiri gem, just try original mirrow.
     9. now you can access ip:30xx to check whether it is okay
         1. If you are accessing the dev env, then you need to config DNS configuration like this:
-            a. file path:
-            /config/environments/development.rb"hmyse.top"
-            b. need code:
-            config.hosts << "hmyse.top"
+            1. file path:
+                1. /config/environments/development.rb"hmyse.top"
+            1. need code:
+                1. config.hosts << "hmyse.top"
     10. git push new create app to repo, and you can clone it to everywhere.
         1. about the order of first time push to git
             1. git remote add origin https://github.com/berxtjkl/RORTestTeam.git && \

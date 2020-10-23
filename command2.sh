@@ -1,2 +1,2 @@
 gem install rails 
-rails new RORTestTeam --skip-test --skip-bundle
+rails new bootTemplateWithROR-vintageMarket --skip-test --skip-bundle

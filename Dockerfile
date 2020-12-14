@@ -1,5 +1,5 @@
-# FROM ruby:2.6
-FROM ruby:2.7
+FROM ruby:2.6
+# FROM ruby:2.7
 # you can also <key>=<value> <key>=<value> writes multiple labels
 LABEL maintainer="jessejunjing@163.com"
 

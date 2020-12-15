@@ -18,7 +18,7 @@ Order of starting a new docker on Chinese Server with ROR:
     9. now you can access ip:30xx to check whether it is okay
         1. If you are accessing the dev env, then you need to config DNS configuration like this:
             1. file path:
-                1. /config/environments/development.rb"hmyse.top"
+                1. /config/environments/development.rb
             1. need code:
                 1. config.hosts << "hmyse.top"
     10. git push new create app to repo, and you can clone it to everywhere.

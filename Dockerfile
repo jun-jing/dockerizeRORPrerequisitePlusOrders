@@ -30,6 +30,7 @@ ENV BUNDLE_PATH /gems
 # comment for nokogiri can not bundle install, on aws can not use mirrors.aliyun.com
 # RUN bundle config 'mirror.https://rubygems.org' 'http://mirrors.aliyun.com/rubygems/'
 # RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+# nokogiri的一个报错引发的经验, 原来不是nokogiri的锅, 只是自己的服务器的内存不足了.....
 
 RUN bundle install 
 
